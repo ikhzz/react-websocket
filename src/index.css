@@ -5,9 +5,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app-hover {
+  cursor: pointer;
+}
+
+.chat-cardbody {
+  align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  display: flex;
+  min-height: 76vh;
+  max-height: 76vh;
+  overflow: hidden scroll;
+}
+
+.chat{
+  width: 100%;
+  display: flex;
+}
+
+.chat-main {
+  justify-content: left;
+}
+
+.chat-reply {
+  justify-content: right;
 }

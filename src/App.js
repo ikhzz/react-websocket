@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Navbars from './component/Navbar';
+import LandingPage from "./component/Home/LandingPage";
+import Home from "./component/Home/Home";
+import { Container, Row } from 'react-bootstrap';
+import AuthContextProvider from "./context/AuthContext";
+import ChatContextProvider from "./context/ChatContext";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter >
+      <AuthContextProvider>
+        <ChatContextProvider>
+          <Container fluid className="min-vh-100">
+            <Row>
+              <Navbars></Navbars>
+            </Row>
+            <Row>
+              {/* prepare multiple page */}
+              <Switch>
+                <Route path="/">
+                  <Home />  
+                </Route>
+              </Switch>
+            </Row>
+          </Container>
+        </ChatContextProvider>
+      </AuthContextProvider>
+    </BrowserRouter>
   );
 }
 
