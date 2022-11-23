@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-websocket/static/css/main.34dc1340.css",
-    "main.js": "/react-websocket/static/js/main.1d711df0.js",
+    "main.js": "/react-websocket/static/js/main.a73f99c7.js",
     "index.html": "/react-websocket/index.html",
     "main.34dc1340.css.map": "/react-websocket/static/css/main.34dc1340.css.map",
-    "main.1d711df0.js.map": "/react-websocket/static/js/main.1d711df0.js.map"
+    "main.a73f99c7.js.map": "/react-websocket/static/js/main.a73f99c7.js.map"
   },
   "entrypoints": [
     "static/css/main.34dc1340.css",
-    "static/js/main.1d711df0.js"
+    "static/js/main.a73f99c7.js"
   ]
 }
